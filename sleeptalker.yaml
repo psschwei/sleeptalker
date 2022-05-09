@@ -11,3 +11,6 @@ spec:
       containerConcurrency: 5
       containers:
         - image: ko://github.com/psschwei/sleeptalker
+          readinessProbe:
+            periodSeconds: 0 # opt out of aggressive probing
+
